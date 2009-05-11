@@ -1,7 +1,12 @@
-InPlaceEditing
-==============
+InPlaceEditing with acts_as_textiled support
+============================================
 
 Example:
+
+  # Model
+  class Post < ActiveRecord::Base
+    acts_as_textiled :body
+  end
 
   # Controller
   class BlogController < ApplicationController
@@ -12,3 +17,4 @@ Example:
   <%= in_place_editor_field :post, 'title' %>
 
 Copyright (c) 2007 David Heinemeier Hansson, released under the MIT license  
+Copyrigth (c) 2009 Juan Esteban Bernabó
